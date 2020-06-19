@@ -18,9 +18,9 @@ body{
   overflow: hidden;
   // -webkit-transform: translate3d(0, 0, 0);
   //         transform: translate3d(0, 0, 0);
-  
+  display: flex;
+  justify-content: space-between;
     &__title{
-      
       &--text{
         margin-left: 50px;
         line-height: 140px;
@@ -38,8 +38,12 @@ body{
       }
     }
     &__right{
+     
       &--btn{
-      
+        text-decoration: none;
+        color: rgba(248, 167, 147, 0.774);
+        margin-right: 50px;
+        line-height: 140px;
       }
     }
   }
