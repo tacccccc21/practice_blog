@@ -1,0 +1,177 @@
+body{
+ 
+  .header{
+    margin: 20px auto;
+  width: 96%;
+  height: 140px;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  background:linear-gradient(to bottom, #eb95b2bc,#eee 70%, rgba(255, 255, 255, 0.5));
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  border-radius: 5px;
+    &__title{
+      
+      &--text{
+        margin-left: 50px;
+        line-height: 140px;
+        text-align: center;
+        -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: .3em;
+        font-size: 24px;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        text-indent: .3em;
+        text-decoration: none;
+      }
+    }
+    &__right{
+      &--btn{
+      
+      }
+    }
+  }
+  .contents{
+   
+    .content{
+     
+      &__left{
+        
+        &--image{
+       
+        }
+      }
+      &__right{
+       
+        &__top{
+       
+          &--title{
+          
+          }
+        }
+        &__bottom{
+         
+          &--userName{
+            &--btn{
+             
+            }
+          }
+          &--date{
+           
+          }
+        }
+      }
+      &__title{
+      
+      }
+    }
+    .postTitle{
+      
+    }
+    .postDate{
+   
+    }
+    .postAuthor{
+   
+    }
+    .postManage{
+     
+      &__edit{
+     
+      }
+      &__delete{
+       
+      }
+    }
+    .postText{
+     
+    }
+  }
+  .form{
+   
+    &__title{
+      
+    }
+    &__text{
+   
+    }
+    &__btn{
+    
+    }
+  }
+  .user{
+  
+  }
+}
+
+
+
+
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  background: rgba(0, 234, 255, 0.637);
+  width: 3000px;
+  height: 3000px;
+  margin-left: -510px;
+  margin-top: -2940px;
+  -webkit-transform-origin: 50% 48%;
+          transform-origin: 50% 48%;
+  border-radius: 43%;
+  -webkit-animation: drift 3000ms infinite linear;
+          animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+  -webkit-animation: drift 5000ms infinite linear;
+          animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+  -webkit-animation: drift 7000ms infinite linear;
+          animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: yellow;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ee88aa), color-stop(80%, rgba(221, 238, 255, 0)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to bottom, #ee88aa, rgba(221, 238, 255, 0) 80%, rgba(255, 255, 255, 0.5));
+  z-index: 11;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
