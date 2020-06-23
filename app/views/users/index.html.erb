@@ -1,3 +1,5 @@
 <% @user.each do |user| %>
-   <%= user.nickname %>
+  <div class="name">
+    <%= link_to user.nickname, user_path(user.id), class: "name__path"%>
+  </div>
 <% end %>
