@@ -52,28 +52,31 @@ body{
   height: 2000px;
   width: 60%;
   margin: 200px auto;
-  background-color: whitesmoke;
+ background-color: whitesmoke;
   padding-top: 20px;
   padding-bottom: 20px;
+  
+
   
   
   // padding-top: 200px;
     .content{
       width: 85%;
       margin: 10px auto;
-      
+      border: solid 2px rgba(0, 0, 0, 0.2);
       &__left{
-        
+        padding-left: 15px;
         &--image{
       
         }
       }
       &__right{
-      
+        padding-left: 15px;
         &__top{
       
           &--title{
             text-decoration: none;
+            
           }
         }
         &__bottom{
@@ -322,4 +325,15 @@ nav.globalMenuSp.active {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+
+
+
+#gradient
+{
+  // width: 100%;
+  // height: 100%;
+  // padding: 0px;
+  // margin: 0px;
 }
