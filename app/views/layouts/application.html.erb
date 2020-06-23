@@ -18,17 +18,49 @@
       <div class="header__title">
         <%= link_to "Blog-Chat", root_path, class: "header__title--text" %>
       </div>
-      <div class="header__right">
+
+
+
+
+
+
+ <nav class="globalMenuSp">
+      
       <% if user_signed_in? %>
-        <%= link_to current_user.nickname, user_path(current_user), class: "header__right--btn" %>
-        <%= link_to "new blog", new_post_path, class: "header__right--btn" %>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right--btn" %>
-        <%= link_to "user", users_path,class: "header__right--btn"%>
+      <ul>
+        <li><%= link_to current_user.nickname, user_path(current_user) %></li>
+        <li><%= link_to "new blog", new_post_path %></li>
+        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+        <li><%= link_to "user", users_path %></li>
+       </ul>
       <% else %>
-        <%= link_to "ログイン", new_user_session_path, class: "header__right--btn" %>
-        <%= link_to "新規登録", new_user_registration_path, class: "header__right--btn" %>
+    <ul>
+        <li><%= link_to "ログイン", new_user_session_path %></li>
+        <li><%= link_to "新規登録", new_user_registration_path %></li>
+      </ul>
       <% end %>
-      </div>
+      
+      </nav>
+
+
+
+
+
+
+      <div class="navToggle">
+         <span></span><span></span><span></span><span>menu</span>
+       </div>
+
+
+     
+
+
+
+
+     
+
+
+
     </header>
     <div class="contents">
     <%= yield %>
