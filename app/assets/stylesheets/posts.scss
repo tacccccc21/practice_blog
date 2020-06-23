@@ -209,7 +209,7 @@ body{
 
 nav.globalMenuSp{
   position: fixed;
-  z-index: 20px;
+  
   top: 0;
   right: 0;
   background: #fff;
@@ -218,11 +218,11 @@ nav.globalMenuSp{
   transform: translateY(-100%);
   transition: all 0.6s;
   width: 500px;
-  
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
 }
 
 nav.globalMenuSp ul {
-  background: rgba(163, 255, 255, 0.568);
+  background:linear-gradient(to bottom, #ffcdec,rgba(238, 238, 238,1) 70%, rgba(255, 255, 255,1));
   margin: 0 auto;
   padding: 0;
   width: 100%;
@@ -234,7 +234,14 @@ nav.globalMenuSp ul li{
   padding: 0;
   width: 100%;
   border-bottom: 1px dotted #333;
+  a{
+    text-decoration: none;
+  }
   
+}
+
+nav.globalMenuSp ul li :hover{
+  background: rgba(255, 255, 255, 0.568);
 }
 
 nav.globalMenuSp ul li:last-child {
@@ -244,7 +251,7 @@ nav.globalMenuSp ul li:last-child {
 
 nav.globalMenuSp ul li a {
   display: block;
-  color: #000;
+  color: rgba(248, 167, 147, 0.774);
   padding: 1em 0;
 }
 
@@ -260,7 +267,7 @@ nav.globalMenuSp.active {
   display: block;
   position: fixed;    /* bodyに対しての絶対位置指定 */
   right: 20px;
-  top: 25px;
+  top: 45px;
   width: 42px;
   height: 51px;
   cursor: pointer;
