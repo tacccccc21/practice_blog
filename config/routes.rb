@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 root to: 'posts#index'
 resources :posts
 resources :users, only: [:show, :index, :destroy]
+resources :groups, only: [:new, :create]
 end
