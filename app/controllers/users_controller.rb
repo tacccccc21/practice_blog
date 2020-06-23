@@ -1,11 +1,18 @@
 class UsersController < ApplicationController
+
+  def index
+    @user = User.all
+  end
+
   def show
     @user = User.find(params[:id])
     @posts = @user.posts
   end
 
-  def index
-    @user = User.all
+  def destroy 
+    @user = User.find(id: params[:id])
+    @user.destroy
+    redirect_to("/")
   end
 
 end
