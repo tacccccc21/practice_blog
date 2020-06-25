@@ -1,0 +1,8 @@
+<% @group.each do |group| %>
+  <div class="name">
+    <%= link_to group.name, class: "group__path"%>
+  </div>
+<% end %>
+
+
+<%= render 'messages/side_bar'%>
