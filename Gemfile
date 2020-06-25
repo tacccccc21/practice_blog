@@ -65,3 +65,5 @@ gem 'devise'
 gem 'pry-rails'
 gem "jquery-rails"
 gem 'jquery-turbolinks'
+gem 'carrierwave'
+gem 'mini_magick'
