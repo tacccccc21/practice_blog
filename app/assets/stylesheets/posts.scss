@@ -50,11 +50,12 @@ body{
 
   .contents{
   height: 2000px;
-  width: 60%;
+  width: 70%;
   margin: 200px auto;
- background-color: whitesmoke;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: whitesmoke;
+  padding-top: 30px;
+  // padding-top: 20px;
+  // padding-bottom: 20px;
   
 
   
@@ -64,6 +65,7 @@ body{
       width: 85%;
       margin: 10px auto;
       border: solid 2px rgba(0, 0, 0, 0.2);
+     
       &__left{
         padding-left: 15px;
         &--image{
@@ -71,6 +73,7 @@ body{
         }
       }
       &__right{
+        
         padding-left: 15px;
         &__top{
       

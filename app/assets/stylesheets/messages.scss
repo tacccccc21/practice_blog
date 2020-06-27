@@ -1,0 +1,53 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.chatBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+
+.allGroups{
+  width: 25%;
+  height: 2000px;
+  background-color: rgb(231, 231, 210);
+  margin-top: -30px;
+  padding-bottom: 30px;
+}
+
+.UserName{
+  height: 100px;
+  background-color: rgb(3, 53, 206);
+  line-height: 100px;
+  color: #eeeeee;
+  padding-left: 20px;
+  border-bottom: silver solid 1px;
+}
+
+.groups__name{
+  border-bottom: silver solid 1px;
+  height: 70px;
+}
+
+.groupBox{
+  height: 2000px;
+  width: 75%;
+  background-color: springgreen;
+  margin-top: -30px;
+  padding-bottom: 30px;
+  
+  &__name{
+    width: 100%;
+    height: 100px;
+    background-color: thistle;
+  }
+  .form{
+    width: 100%;
+    height: 130px;
+    background-color: orchid;
+    margin-top: 1746px;
+  }
+}

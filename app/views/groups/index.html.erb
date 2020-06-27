@@ -1,0 +1,31 @@
+<div class="chatBox">
+  <div class="allGroups">
+    <div class ="UserName">
+      現ユーザー
+      <%= current_user.nickname %>
+    </div>
+
+    <% current_user.groups.each do |group| %>
+    <div class="groups__name">
+      <%= link_to group.name, class: "group__path"%>
+    </div>
+    <% end %>
+
+  </div>
+
+
+
+  <div class="groupBox">
+    <div class="groupBox__name">
+      groupBox__name
+    </div>
+    groupBox
+    
+      
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
