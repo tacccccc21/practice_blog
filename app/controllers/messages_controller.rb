@@ -19,6 +19,10 @@ class MessagesController < ApplicationController
     end
   end
 
+  def show
+    @proup = Group.find(params[:id])
+  end
+
   private
 
   def message_params
