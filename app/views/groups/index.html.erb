@@ -20,6 +20,16 @@
       groupBox__name
     </div>
     groupBox
+    <div class="form">
+      <div class="form__message">
+        <%= text_field :content, placeholder: 'type a message' %>
+            <div class="form___mask">
+              <%= file_field :image, class: 'hidden' %>
+              <%= submit_tag 'Send', class: 'form__submit' %>
+            </div>
+      </div>
+    </div>
+
   </div>
 
 
